@@ -31,6 +31,16 @@
   top: 50%;
   margin: 0; }
 
+.twitter {
+  position: fixed;
+  bottom: 30px;
+  left: 30px; }
+
+.submit {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
+
 a {
   text-decoration: none;
   color: black;
@@ -40,8 +50,8 @@ a:hover {
   color: blue; }
 
 section {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 94%;
+  margin: 65px auto;
   padding: .5vw;
   font-size: 0;
   display: -ms-flexbox;
