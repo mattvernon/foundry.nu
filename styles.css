@@ -1,8 +1,5 @@
-html {
+* {
   box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
 
 .text-style {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,8 +12,10 @@ html {
 
 .site-title {
   position: fixed;
+  top: 30px;
   left: 50%;
-  top: 30px; }
+  width: 200px;
+  margin-left: -100px; }
 
 .left {
   transform: rotate(-90deg);
@@ -40,24 +39,28 @@ a {
 a:hover {
   color: blue; }
 
-.container {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
-  .container::after {
-    clear: both;
-    content: "";
-    display: block; }
+section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex; }
 
-.foundry {
-  background-color: blue;
-  height: 100px;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-top: 2%; }
-  .foundry:last-child {
-    margin-right: 0; }
+section div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 30%;
+  margin: .5vw; }
+
+section div img {
+  width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=styles.css.map */

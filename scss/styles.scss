@@ -1,5 +1,6 @@
-@import "bourbon/bourbon";
-@import "neat/neat";
+* {
+  box-sizing: border-box;
+}
 
 .text-style {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
@@ -13,8 +14,10 @@
 
 .site-title {
   position: fixed;
-  left: 50%;
   top: 30px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
 }
 
 .left {
@@ -43,13 +46,31 @@ a:hover {
   color: blue;
 }
 
-.container {
-  @include outer-container;
+// start grid
+section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+section div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 30%;
+  margin: .5vw;
+}
+section div img {
+  width: 100%;
+  height: auto;
 }
 
-.foundry {
-  background-color: blue;
-  height: 100px;
-  @include span-columns(3);
-  margin-top: 2%;
-}
+
+// end grid
