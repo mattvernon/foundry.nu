@@ -10,6 +10,14 @@
   text-transform: uppercase;
   text-align: center; }
 
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s; }
+
+a:hover {
+  color: blue; }
+
 .site-title {
   position: fixed;
   top: 30px;
@@ -41,18 +49,9 @@
   bottom: 30px;
   right: 30px; }
 
-a {
-  text-decoration: none;
-  color: black;
-  transition: 0.2s; }
-
-a:hover {
-  color: blue; }
-
 section {
   max-width: 94%;
   margin: 65px auto;
-  padding: .5vw;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
@@ -67,10 +66,17 @@ section div {
   -ms-flex: auto;
   flex: auto;
   width: 30%;
-  margin: .5vw; }
+  margin: .5vw;
+  height: auto;
+  background: #F1F1F1;
+  transition: 0.5s; }
+
+section div:hover {
+  background: #E2E2E2; }
 
 section div img {
+  padding: 25%;
   width: 100%;
-  height: auto; }
+  height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
