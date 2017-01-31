@@ -97,5 +97,40 @@ section div img {
   height: 100%;
 }
 
-
 // end grid
+
+// mobile and smaller screens
+
+@media only screen  and (max-width : 1224px) {
+
+  .left {
+    left: -130px;
+  }
+
+  .right {
+    right:-130px;
+  }
+
+  .site-title {
+    top: 20px;
+  }
+
+  section {
+    max-width: 90%;
+  }
+
+  section div {
+    width: 40%;
+  }
+}
+
+@media only screen  and (max-width : 600px) {
+  .left,
+  .right {
+    display: none;
+  }
+
+  section div {
+    width: 100%;
+  }
+}
