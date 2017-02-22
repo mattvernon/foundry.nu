@@ -49,6 +49,19 @@ a:hover {
   bottom: 30px;
   right: 30px; }
 
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  font-size: 24px;
+  letter-spacing: 0.33;
+  line-height: 36px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 section {
   max-width: 94%;
   margin: 65px auto;
@@ -94,7 +107,12 @@ section a div img {
     max-width: 90%; }
 
   section a {
-    width: 40%; } }
+    width: 40%; }
+
+  .about {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0; } }
 @media only screen and (max-width: 600px) {
   .left,
   .right {
